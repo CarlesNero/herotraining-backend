@@ -5,7 +5,7 @@ FROM eclipse-temurin:21-jdk-alpine
 WORKDIR /app
 
 # Copiar el JAR al contenedor
-COPY target/herotraining-backend-0.0.1-SNAPSHOT.jar app.jar
+COPY target/hero-training-backend-0.0.1-SNAPSHOT.jar app.jar
 
 # Exponer el puerto en el que corre Spring Boot
 EXPOSE 8083
