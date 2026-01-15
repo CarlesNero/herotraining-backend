@@ -42,6 +42,3 @@ jobs:
         run: |
           docker push ghcr.io/${{ env.REPO_OWNER_LOWER }}/herotraining-backend:latest
           docker push ghcr.io/${{ env.REPO_OWNER_LOWER }}/herotraining-backend:${{ github.sha }}
-
-      - name: Trigger Portainer webhook
-        run: curl -X POST ${{ secrets.PORTAINER_WEBHOOK }}
